@@ -10,7 +10,6 @@
 ![DAX](https://img.shields.io/badge/DAX-Measures-0078D4?style=for-the-badge)
 ![Power Query](https://img.shields.io/badge/Power%20Query-ETL-217346?style=for-the-badge)
 ![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white)
-![Markdown](https://img.shields.io/badge/Markdown-Docs-000000?style=for-the-badge&logo=markdown&logoColor=white)
 
 </div>
 
