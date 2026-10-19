@@ -2,7 +2,7 @@
 
 # 🍫 Chocolate Factory Sales Analysis
 
-### An interactive Power BI dashboard turning raw chocolate sales data into clear, actionable business insight
+### Sales performance analysis for a chocolate manufacturing business turning raw chocolate sales data into clear, actionable business insight
 
 <br>
 
