@@ -88,7 +88,7 @@ If prompted, update the data source path to point to `Data/Chocolate Sales Datas
 - **Power Query** – data cleaning and transformation (ETL)
 - **DAX** – calculated measures, columns, and dynamic KPIs
 - **Data Modeling** – star schema design and table relationships
-- **Microsoft Excel** – source dataset storage and preparation
+- **Microsoft Excel** – source dataset and initial preparation
 
 <br>
 
@@ -246,6 +246,6 @@ This project is licensed under the terms of the [LICENSE](LICENSE) file in this 
 
 **Built with Power BI**
 
-[GitHub](https://github.com/<your-username>) • [LinkedIn](https://linkedin.com/in/<your-profile>)
+[GitHub](https://github.com/aleeza1530) • [LinkedIn](https://www.linkedin.com/in/aleeza-tahir-tech)
 
 </div>
