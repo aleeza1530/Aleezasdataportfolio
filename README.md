@@ -33,7 +33,7 @@ Beyond its business value, this project demonstrates practical, end-to-end **Pow
 
 <div align="center">
 
-![Dashboard](Images/dashboard.png)
+![Dashboard](https://github.com/user-attachments/assets/1062add2-d3b5-48be-858a-bcb4ec271116)
 
 </div>
 
@@ -52,10 +52,17 @@ Beyond its business value, this project demonstrates practical, end-to-end **Pow
 | **Units** | Quantity of units sold |
 | **Cost Per Unit** | Production cost for one unit of the product |
 | **Cost** | Total cost (Units × Cost Per Unit) |
-| **Total Profit** | Amount minus Cost |
+| **Profit** | Amount minus Cost |
 
 **Scope:** 300 transactions • 22 products • 6 countries • 10 salespeople
 
+<div align="center">
+
+![Excel Pivot Analysis](<img width="738" height="273" alt="Screenshot 2026-10-20 at 21 20 40" src="https://github.com/user-attachments/assets/ac714757-a988-4d0a-b8d0-d1a20a7f0b81" />)
+
+*Initial exploration of the sales data in Excel using pivot tables*
+
+</div>
 <br>
 
 ---
@@ -93,7 +100,67 @@ If prompted, update the data source path to point to `Data/Chocolate Sales Datas
 <br>
 
 ---
+## 🔄 Data Preparation
 
+The raw data was cleaned in **Power Query** before analysis:
+
+- Removed unused columns and blank rows from the source sheet
+- Trimmed text columns to remove stray spaces
+- Set correct data types for text, whole number, and decimal columns
+- Renamed columns for clarity (e.g. **Total Profit** → **Profit**) to avoid conflicts with DAX measure names
+- Confirmed the final table contained all **300** transactions
+
+<div align="center">
+
+![Power Query Steps](PASTE-THE-LINK-HERE)
+
+*Data cleaning steps applied in Power Query*
+
+</div>
+
+<br>
+
+---
+
+## 🧩 Data Model
+
+The flat source table was restructured into a **star schema**:
+
+- **Fact table:** `Sales`, containing every transaction with its amounts, units, cost, and profit
+- **Dimension tables:** `Products`, `Salespeople`, and `Countries`, each built in Power Query by referencing the Sales table and removing duplicates
+
+Each dimension has a **one-to-many** relationship with the Sales table. All slicers and chart categories use the dimension tables, so filters flow consistently across the whole report.
+
+<div align="center">
+
+![Star Schema Data Model](PASTE-THE-LINK-HERE)
+
+*Star schema in Power BI Model view: Sales fact table with Products, Salespeople, and Countries dimensions*
+
+</div>
+
+<br>
+
+---
+
+## 🧮 DAX Measures
+
+| Measure | Formula | Purpose |
+|:--|:--|:--|
+| **Total Revenue** | `SUM(Sales[Amount])` | Total sales value |
+| **Total Cost** | `SUM(Sales[Cost])` | Total production cost of goods sold |
+| **Total Profit** | `SUM(Sales[Profit])` | Revenue remaining after costs |
+| **Profit Margin** | `DIVIDE([Total Profit], [Total Revenue])` | Profit as a share of revenue |
+| **Units Sold** | `SUM(Sales[Units])` | Total sales volume |
+| **Total Transactions** | `COUNTROWS(Sales)` | Number of sales |
+| **Avg Transaction Value** | `DIVIDE([Total Revenue], [Total Transactions])` | Average value per sale |
+| **Loss-Making Transactions** | `CALCULATE(COUNTROWS(Sales), Sales[Profit] < 0)` | Number of sales where cost exceeded revenue |
+
+`DIVIDE` is used instead of `/` so that calculations return blank rather than an error when a filter leaves no revenue.
+
+<br>
+
+---
 ## ✨ Dashboard Features
 
 | Feature | Description |
@@ -155,7 +222,18 @@ If prompted, update the data source path to point to `Data/Chocolate Sales Datas
 <br>
 
 ---
+## 🔍 Data Quality Notes
 
+During validation, some transactions appeared to contain data-entry errors:
+
+- One sale recorded **150 units of 70% Dark Bites for a total of 42**, about 0.28 per unit against a production cost of 14.49 per unit. The same salesperson's other sales of this product were priced at roughly 38–44 per unit.
+- One transaction recorded **0 units** while still showing a sales amount.
+
+A **Price Per Unit** calculated column was added to compare pricing across transactions and identify outliers like these. Because the correct values could not be confirmed, these rows were kept in the analysis but flagged. Some of the loss-making transactions may therefore reflect data errors rather than genuine losses.
+
+<br>
+
+---
 ## 🧠 Project Learnings
 
 - Built a fully **interactive Power BI dashboard** from raw sales data.
