@@ -77,7 +77,7 @@ Follow these steps to explore the dashboard locally:
 **1. Clone the repository**
 
 ```bash
-git clone https://github.com/<your-username>/Chocolate-Sales-Analysis.git
+git clone https://github.com/aleeza1530/Aleezasdataportfolio.git
 ```
 
 **2. Open the report**
