@@ -23,7 +23,7 @@ The **Chocolate Factory Sales Analysis** dashboard was built to evaluate sales p
 
 The dashboard is designed to answer the questions decision-makers care about most: which products generate the highest revenue, which countries perform best, which salespeople drive the most sales, and which products deliver the strongest profit margins. It also highlights loss-making transactions, helping stakeholders spot pricing or data issues and identify products that may need review.
 
-Beyond its business value, this project demonstrates practical, end-to-end **Power BI skills for data analytics**, from cleaning and transforming raw data in Power Query, to building a star schema data model, to writing DAX measures and designing an intuitive, business-focused report.
+Beyond its business value, this project demonstrates practical, end-to-end **Power BI skills for data analytics**, from cleaning and transforming raw data in Power Query, to building a star schema data model, to writing DAX measures and designing an intuitive, business-focused report. Building Pivot tables in Excel is included in this Sales Analysis
 
 <br>
 
