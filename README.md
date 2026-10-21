@@ -98,7 +98,7 @@ If prompted, update the data source path to point to `Data/Chocolate Sales Datas
 - **Power Query** – data cleaning and transformation (ETL)
 - **DAX** – calculated measures, columns, and dynamic KPIs
 - **Data Modeling** – star schema design and table relationships
-- **Microsoft Excel** – source dataset and initial preparation
+- **Microsoft Excel** – source dataset and initial preparation and pivot tables 
 
 <br>
 
@@ -212,6 +212,7 @@ Each dimension has a **one-to-many** relationship with the Sales table. All slic
 | **Units Sold** | 45,660 |
 | **Total Transactions** | 300 |
 | **Average Transaction Value** | 4,136 |
+| **Loss-Making Transactions** | 63 |
 
 <br>
 
@@ -244,6 +245,7 @@ A **Price Per Unit** calculated column was added to compare pricing across trans
 ---
 ## 🧠 Project Learnings
 
+- Built **pivot tables** in Excel to explore and summarise the sales data before moving to Power BI.
 - Built a fully **interactive Power BI dashboard** from raw sales data.
 - **Cleaned and transformed** raw data using Power Query, handling data types and formatting issues.
 - Created **relationships between multiple tables** to enable accurate cross-filtering.
@@ -268,6 +270,7 @@ A **Price Per Unit** calculated column was added to compare pricing across trans
 | Data Cleaning | Data Transformation | Data Modeling |
 | DAX | Power BI | Business Intelligence |
 | Dashboard Design | Data Visualization | Analytical Thinking |
+| Pivot Tables | Microsoft Excel | Data Exploration |
 
 </div>
 
