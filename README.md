@@ -58,7 +58,10 @@ Beyond its business value, this project demonstrates practical, end-to-end **Pow
 
 <div align="center">
 
-![Excel Pivot Analysis](<img width="738" height="273" alt="Screenshot 2026-10-20 at 21 20 40" src="https://github.com/user-attachments/assets/ac714757-a988-4d0a-b8d0-d1a20a7f0b81" />)
+[Excel Pivot Analysis]
+
+<img width="702" height="277" alt="Screenshot 2026-10-21 at 11 04 58" src="https://github.com/user-attachments/assets/21e070f7-6d85-4e1c-81ff-de6ec24d9f00" />
+
 
 *Initial exploration of the sales data in Excel using pivot tables*
 
@@ -102,9 +105,9 @@ If prompted, update the data source path to point to `Data/Chocolate Sales Datas
 ---
 ## 🔄 Data Preparation
 
-The raw data was cleaned in **Power Query** before analysis:
+The raw data was cleaned in both **Excel** and **Power Query** before analysis:
 
-- Removed unused columns and blank rows from the source sheet
+- Removed the title and blank rows from the source sheet in Excel before loading
 - Trimmed text columns to remove stray spaces
 - Set correct data types for text, whole number, and decimal columns
 - Renamed columns for clarity (e.g. **Total Profit** → **Profit**) to avoid conflicts with DAX measure names
@@ -112,7 +115,10 @@ The raw data was cleaned in **Power Query** before analysis:
 
 <div align="center">
 
-![Power Query Steps](PASTE-THE-LINK-HERE)
+[Power Query Steps]
+
+<img width="912" height="381" alt="Screenshot 2026-10-21 113840" src="https://github.com/user-attachments/assets/39b3bfa4-c64c-43d9-b53f-21bf0c43820c" />
+
 
 *Data cleaning steps applied in Power Query*
 
@@ -133,7 +139,9 @@ Each dimension has a **one-to-many** relationship with the Sales table. All slic
 
 <div align="center">
 
-![Star Schema Data Model](PASTE-THE-LINK-HERE)
+[Star Schema Data Model]
+
+<img width="871" height="370" alt="Screenshot 2026-10-21 114209" src="https://github.com/user-attachments/assets/20cb3579-42e7-4ad9-be60-fe5f54b49fb6" />
 
 *Star schema in Power BI Model view: Sales fact table with Products, Salespeople, and Countries dimensions*
 
