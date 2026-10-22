@@ -2,7 +2,7 @@
 
 # Fewest Units, Higher Profit: How the UK Outearned the USA
 
-### Sales performance analysis for a chocolate manufacturing business turning raw chocolate sales data into clear, actionable business insight
+### The USA sold more chocolate than any other market but earned the least profit of all six countries, while the UK made 45% more profit from 4,400 fewer units.
 
 <br>
 
