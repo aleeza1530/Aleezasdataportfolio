@@ -1,6 +1,6 @@
 <div align="center">
 
-# Chocolate Factory Sales Analysis
+# Fewest Units, Higher Profit: How the UK Outearned the USA
 
 ### Sales performance analysis for a chocolate manufacturing business turning raw chocolate sales data into clear, actionable business insight
 
