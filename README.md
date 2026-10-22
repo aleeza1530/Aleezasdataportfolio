@@ -36,7 +36,15 @@
 
 ![Dashboard](https://github.com/user-attachments/assets/1062add2-d3b5-48be-858a-bcb4ec271116)
 
-hhj
+- **Total Revenue and Profit Margin by Country:**
+  **Conclusion:** Sales volume does not guarantee profitability. The USA's high volume and low margin suggest it may be selling a lower-value product mix or pricing too low, making it the market that most needs a pricing review, while Canada shows that strong margins are achievable.
+
+- **Profit Margin by Product:**
+  **Conclusion:** Revenue alone is a misleading measure of product success. Products like Organic Choco Syrup bring in significant revenue but contribute relatively little profit, so product decisions should weigh margin alongside sales.
+
+- **Total Revenue by Product:**
+  **Conclusion:** Revenue is not dependent on a single star product. With the top three products so closely matched, the business has several strong sellers, which reduces risk if demand for any one product falls. Lower-revenue products like Almond Choco may need review to decide whether to promote, reprice, or discontinue them.
+  
 </div>
 
 <br>
