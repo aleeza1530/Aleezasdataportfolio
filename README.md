@@ -19,12 +19,13 @@
 
 ## Description
 
-The **Chocolate Factory Sales Analysis** dashboard was built to evaluate sales performance across a chocolate manufacturing company. Using a dataset of **300 sales transactions** covering **22 products**, **6 countries**, and **10 sales representatives**, the report brings revenue, cost, and profit data together into a single, interactive view.
-
-The dashboard is designed to answer the questions decision-makers care about most: which products generate the highest revenue, which countries perform best, which salespeople drive the most sales, and which products deliver the strongest profit margins. It also highlights loss-making transactions, helping stakeholders spot pricing or data issues and identify products that may need review.
-
-Beyond its business value, this project demonstrates practical, end-to-end **Power BI skills for data analytics**, from cleaning and transforming raw data in Power Query, to building a star schema data model, to writing DAX measures and designing an intuitive, business-focused report. Building Pivot tables in Excel is included in this Sales Analysis
-
+- **The USA sold more chocolate than any other market, yet earned the least profit.** Its 43.4% profit margin trailed every other country by more than 20 percentage points.
+- **The UK did the opposite:** it sold the fewest units of all six countries but made 45% more profit than the USA.
+- **India was the biggest market,** generating 20% of all revenue (252,469).
+- **One in five sales lost money.** Despite a healthy 64.6% overall margin, 63 of 300 transactions were loss-making, some of them likely data-entry errors.
+- **A best-seller with a hidden problem:** Organic Choco Syrup ranked 4th for revenue but had the lowest margin of any product, at just 28.2%.
+- **One salesperson stood out:** Gigi Bohling led the team in revenue (165,725), profit, and margin (81.6%), despite making fewer sales than several colleagues.
+- **The analysis behind it:** 300 sales across 22 products, 6 countries, and 10 salespeople, explored with Excel pivot tables, cleaned in Power Query, modelled as a star schema, and measured with DAX in an interactive Power BI dashboard.
 <br>
 
 ---
