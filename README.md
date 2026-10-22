@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🍫 Chocolate Factory Sales Analysis
+# Chocolate Factory Sales Analysis
 
 ### Sales performance analysis for a chocolate manufacturing business turning raw chocolate sales data into clear, actionable business insight
 
@@ -17,7 +17,7 @@
 
 ---
 
-## 📖 Description
+## Description
 
 The **Chocolate Factory Sales Analysis** dashboard was built to evaluate sales performance across a chocolate manufacturing company. Using a dataset of **300 sales transactions** covering **22 products**, **6 countries**, and **10 sales representatives**, the report brings revenue, cost, and profit data together into a single, interactive view.
 
@@ -29,7 +29,7 @@ Beyond its business value, this project demonstrates practical, end-to-end **Pow
 
 ---
 
-## 📸 Dashboard Preview
+## Dashboard Preview
 
 <div align="center">
 
@@ -41,7 +41,7 @@ Beyond its business value, this project demonstrates practical, end-to-end **Pow
 
 ---
 
-## 🗃️ Dataset Overview
+## Dataset Overview
 
 | Column | Description |
 |:--|:--|
@@ -70,7 +70,7 @@ Beyond its business value, this project demonstrates practical, end-to-end **Pow
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 Follow these steps to explore the dashboard locally:
 
@@ -92,7 +92,7 @@ If prompted, update the data source path to point to `Data/Chocolate Sales Datas
 
 ---
 
-## 🛠️ Tools Used
+## Tools Used
 
 - **Microsoft Power BI** – report building and visualization
 - **Power Query** – data cleaning and transformation (ETL)
@@ -103,7 +103,7 @@ If prompted, update the data source path to point to `Data/Chocolate Sales Datas
 <br>
 
 ---
-## 🔄 Data Preparation
+## Data Preparation
 
 The raw data was cleaned in both **Excel** and **Power Query** before analysis:
 
@@ -128,7 +128,7 @@ The raw data was cleaned in both **Excel** and **Power Query** before analysis:
 
 ---
 
-## 🧩 Data Model
+## Data Model
 
 The flat source table was restructured into a **star schema**:
 
@@ -151,7 +151,7 @@ Each dimension has a **one-to-many** relationship with the Sales table. All slic
 
 ---
 
-## 🧮 DAX Measures
+## DAX Measures
 
 | Measure | Formula | Purpose |
 |:--|:--|:--|
@@ -169,7 +169,7 @@ Each dimension has a **one-to-many** relationship with the Sales table. All slic
 <br>
 
 ---
-## ✨ Dashboard Features
+## Dashboard Features
 
 | Feature | Description |
 |:--|:--|
@@ -187,7 +187,7 @@ Each dimension has a **one-to-many** relationship with the Sales table. All slic
 
 ---
 
-## ❓ Business Questions Answered
+## Business Questions Answered
 
 1. What are the **total sales** for the business?
 2. What is the **total profit** generated?
@@ -202,7 +202,7 @@ Each dimension has a **one-to-many** relationship with the Sales table. All slic
 
 ---
 
-## 📌 Key KPIs
+## Key KPIs
 
 | KPI | Value |
 |:--|:--|
@@ -218,7 +218,7 @@ Each dimension has a **one-to-many** relationship with the Sales table. All slic
 
 ---
 
-## 💡 Key Insights
+## Key Insights
 
 - **Top product by revenue:** *Caramel Stuffed Bars* generated the highest revenue (72,373), closely followed by *Choco Coated Almonds* and *Baker's Choco Chips*.
 - **Most profitable product:** *Baker's Choco Chips* delivered the highest total profit (58,278), while *Eclairs* achieved the strongest margin at 88.6%.
@@ -231,7 +231,7 @@ Each dimension has a **one-to-many** relationship with the Sales table. All slic
 <br>
 
 ---
-## 🔍 Data Quality Notes
+## Data Quality Notes
 
 During validation, some transactions appeared to contain data-entry errors:
 
@@ -243,7 +243,7 @@ A **Price Per Unit** calculated column was added to compare pricing across trans
 <br>
 
 ---
-## 🧠 Project Learnings
+## Project Learnings
 
 - Built **pivot tables** in Excel to explore and summarise the sales data before moving to Power BI.
 - Built a fully **interactive Power BI dashboard** from raw sales data.
@@ -261,7 +261,7 @@ A **Price Per Unit** calculated column was added to compare pricing across trans
 
 ---
 
-## 🎯 Skills Demonstrated
+## Skills Demonstrated
 
 <div align="center">
 
@@ -278,7 +278,7 @@ A **Price Per Unit** calculated column was added to compare pricing across trans
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```
 Chocolate-Sales-Analysis/
@@ -300,7 +300,7 @@ Chocolate-Sales-Analysis/
 
 ---
 
-## 🚀 Future Improvements
+## Future Improvements
 
 - **Time-Based Analysis** – add transaction dates to unlock monthly trends and seasonality
 - **Sales Forecasting** – predict future revenue once time-series data is available
@@ -313,7 +313,7 @@ Chocolate-Sales-Analysis/
 
 ---
 
-## 🏁 Conclusion
+## Conclusion
 
 The **Chocolate Factory Sales Analysis** project demonstrates end-to-end business intelligence skills, from preparing and modeling raw data to delivering a polished, interactive report. By transforming 300 raw sales records into clear KPIs, product and market comparisons, and profitability insights, the dashboard gives stakeholders the actionable information they need to make confident, data-driven decisions about products, markets, and sales strategy.
 
@@ -321,7 +321,7 @@ The **Chocolate Factory Sales Analysis** project demonstrates end-to-end busines
 
 ---
 
-## 📜 License
+## License
 
 This project is licensed under the terms of the [LICENSE](LICENSE) file in this repository.
 
