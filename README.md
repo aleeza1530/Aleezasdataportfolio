@@ -123,11 +123,14 @@ If prompted, update the data source path to point to `Data/Chocolate Sales Datas
 
 I started with an 11-sheet Excel workbook, where 300 sales transactions sat in an 8-column table on the Data sheet, below a title and nine blank rows, next to unrelated question and lookup columns. I cleaned it in two stages: Excel first, then Power Query.
 
--In Excel, I deleted the title and nine blank rows above the table, so Power BI would read the column headers correctly instead of treating the title as data.
--I trimmed the Sales Person, Geography and Product columns to remove stray spaces. None were found, but this prevents duplicate labels like "Canada" and "Canada " if the data is refreshed.
-- I renamed the Total Profit column to Profit, because a column and a DAX measure can't share a name, which freed "Total Profit" for the measure.
-- I built Products (22 rows), Countries (6) and Salespeople (10) by referencing the Sales query and removing duplicates, so each value appears once and filters flow consistently into Sales.
-- I confirmed the final Sales table still held all 300 transactions across 8 columns, matching the raw data, so no sales were lost or duplicated during cleaning.
+- **Excel:** I deleted the title and nine blank rows above the table, so Power BI would read the column headers correctly instead of treating the title as data.
+- **Trimmed text:** I trimmed the Sales Person, Geography and Product columns to remove stray spaces. None were found, but this prevents duplicate labels like "Canada" and "Canada " if the data is refreshed.
+- **Renamed columns:** I renamed the Total Profit column to Profit, because a column and a DAX measure can't share a name, which freed "Total Profit" for the measure.
+- **Dimension tables:** I built Products (22 rows), Countries (6) and Salespeople (10) by referencing the Sales query and removing duplicates, so each value appears once and filters flow consistently into Sales.
+- **Validation:** I confirmed the final Sales table still held all 300 transactions across 8 columns, matching the raw data, so no sales were lost or duplicated during cleaning.
+
+<div align="center">
+
 
 <div align="center">
 
