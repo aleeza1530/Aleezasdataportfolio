@@ -206,21 +206,6 @@ Each dimension has a **one-to-many** relationship with the Sales table. All slic
 
 ---
 
-## Conclusions
-
-1. What are the **total sales** for the business?
-2. What is the **total profit** generated?
-3. Which **chocolate products** generate the most revenue?
-4. Which **salesperson** generates the highest revenue?
-5. Which **countries** contribute the most sales?
-6. Which products have the **highest and lowest profit margins**?
-7. Which **salesperson performs best in each country**?
-8. Which transactions are **loss-making**, and why?
-
-<br>
-
----
-
 ## Key KPIs
 
 | KPI | Value |
@@ -232,6 +217,22 @@ Each dimension has a **one-to-many** relationship with the Sales table. All slic
 | **Total Transactions** | 300 |
 | **Average Transaction Value** | 4,136 |
 | **Loss-Making Transactions** | 63 |
+
+<br>
+
+---
+
+## Conclusions
+
+1. What are the **total sales** for the business?
+2. What is the **total profit** generated?
+3. Which **chocolate products** generate the most revenue?
+4. Which **salesperson** generates the highest revenue?
+5. Which **countries** contribute the most sales?
+6. Which products have the **highest and lowest profit margins**?
+7. Which **salesperson performs best in each country**?
+8. Which transactions are **loss-making**, and why?
+
 
 <br>
 
@@ -262,7 +263,7 @@ A **Price Per Unit** calculated column was added to compare pricing across trans
 <br>
 
 ---
-## Project Learnings
+## Future Analysis
 
 - Built **pivot tables** in Excel to explore and summarise the sales data before moving to Power BI.
 - Built a fully **interactive Power BI dashboard** from raw sales data.
@@ -318,7 +319,6 @@ Chocolate-Sales-Analysis/
 <br>
 
 ---
-
 ## Future Improvements
 
 - **Time-Based Analysis** – add transaction dates to unlock monthly trends and seasonality
