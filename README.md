@@ -106,9 +106,15 @@ If prompted, update the data source path to point to `Data/Chocolate Sales Datas
 
 - **Microsoft Power BI** – report building and visualization
 - **Power Query** – data cleaning and transformation (ETL)
+- **Microsoft Excel** – source dataset and initial preparation and pivot tables 
+
+<br>
+
+---
+
+## Analysis used
 - **DAX** – calculated measures, columns, and dynamic KPIs
 - **Data Modeling** – star schema design and table relationships
-- **Microsoft Excel** – source dataset and initial preparation and pivot tables 
 
 <br>
 
