@@ -206,7 +206,7 @@ Each dimension has a **one-to-many** relationship with the Sales table. All slic
 
 ---
 
-## Business Questions Answered
+## Conclusions
 
 1. What are the **total sales** for the business?
 2. What is the **total profit** generated?
