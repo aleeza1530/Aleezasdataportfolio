@@ -265,18 +265,17 @@ A **Price Per Unit** calculated column was added to compare pricing across trans
 ---
 ## Future Analysis
 
-- Built **pivot tables** in Excel to explore and summarise the sales data before moving to Power BI.
-- Built a fully **interactive Power BI dashboard** from raw sales data.
-- **Cleaned and transformed** raw data using Power Query, handling data types and formatting issues.
-- Created **relationships between multiple tables** to enable accurate cross-filtering.
-- Designed a **star schema data model** with fact and dimension tables for performance and clarity.
-- Wrote **DAX measures and calculated columns** for revenue, profit, margin, and cost analysis.
-- Built **dynamic KPIs** that respond to user selections in real time.
-- Implemented **slicers and drill-through pages** for flexible, layered analysis.
-- Identified **data anomalies and loss-making transactions** to support data quality and pricing decisions.
-- Designed a **business-focused dashboard layout** centered on stakeholder needs.
-- Generated **insights to support data-driven business decisions**.
+- **Lost columns in Power Query:** A Remove Other Columns step accidentally removed most of the Sales table, leaving only Amount. I traced the problem through Applied Steps, found the faulty step, and corrected it to keep all 8 columns. *Lesson: checking each step in Applied Steps makes it easy to find exactly where data goes missing.*
 
+- **Column and measure name clash:** Power BI wouldn't let me create a Total Profit measure, because a column in the Sales table already had that name. I renamed the column to Profit, freeing "Total Profit" for the measure. *Lesson: giving columns and measures clearly different names from the start avoids conflicts.*
+
+- **Broken measure after renaming:** After renaming the column, my Loss-Making Transactions measure stopped working, because it still pointed to the old column name. I updated it to use Sales[Profit]. *Lesson: renaming a column can break any DAX formula that uses it, so I now check my measures after every rename.*
+
+- **Leftover empty tables:** Two empty tables ("Table" and "Table (2)") were left in the model from using Enter Data. Before deleting them, I checked that neither held any measures, since deleting a table also deletes the measures inside it. *Lesson: keeping the model tidy makes it easier for others to understand.*
+
+- **Card formatting conflict:** Setting Total Revenue to whole numbers made its KPI card round 1,240,869 down to "1M". I created a separate Revenue KPI measure for the card with its own format, then renamed its label for that visual, because "Total Revenue" was already taken by the original measure. *Lesson: one measure can't always be formatted to suit every visual, so a dedicated display measure can help.*
+
+- **Building a row-level calculation:** To find suspicious pricing, I needed a price per unit for every individual sale. My first attempt failed because the column was created in the wrong table, so it couldn't reference Sales[Amount]. I recreated it in the Sales table as a calculated column rather than a measure, since the value had to be worked out row by row. *Lesson: use a calculated column when you need a value for each row, and a measure when you need a total across many rows.*
 <br>
 
 ---
