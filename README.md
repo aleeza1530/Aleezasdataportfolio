@@ -129,8 +129,6 @@ I started with an 11-sheet Excel workbook, where 300 sales transactions sat in a
 - **Dimension tables:** I built Products (22 rows), Countries (6) and Salespeople (10) by referencing the Sales query and removing duplicates, so each value appears once and filters flow consistently into Sales.
 - **Validation:** I confirmed the final Sales table still held all 300 transactions across 8 columns, matching the raw data, so no sales were lost or duplicated during cleaning.
 
-<div align="center">
-
 
 <div align="center">
 
@@ -233,21 +231,6 @@ Each dimension has a **one-to-many** relationship with the Sales table. All slic
 7. Which **salesperson performs best in each country**?
 8. Which transactions are **loss-making**, and why?
 
-
-<br>
-
----
-
-## Key Insights
-
-- **Top product by revenue:** *Caramel Stuffed Bars* generated the highest revenue (72,373), closely followed by *Choco Coated Almonds* and *Baker's Choco Chips*.
-- **Most profitable product:** *Baker's Choco Chips* delivered the highest total profit (58,278), while *Eclairs* achieved the strongest margin at 88.6%.
-- **Margin concern:** *Organic Choco Syrup* ranks 4th in revenue but has the lowest margin (28.2%), making it a candidate for pricing or cost review.
-- **Top market:** *India* led all countries in revenue (252,469), with *Canada* close behind and achieving the highest margin (71.3%).
-- **Volume vs. value:** The *USA* sold the most units (10,158) but had the lowest margin (43.4%), suggesting a lower-value product mix or pricing pressure.
-- **Top salesperson:** *Gigi Bohling* generated the highest revenue (165,725) and the strongest margin (81.6%) of the sales team.
-- **Loss-making sales:** 63 of 300 transactions (21%) recorded a negative profit, highlighting potential pricing, discounting, or data-entry issues worth investigating.
-
 <br>
 
 ---
@@ -276,16 +259,27 @@ A **Price Per Unit** calculated column was added to compare pricing across trans
 - **Card formatting conflict:** Setting Total Revenue to whole numbers made its KPI card round 1,240,869 down to "1M". I created a separate Revenue KPI measure for the card with its own format, then renamed its label for that visual, because "Total Revenue" was already taken by the original measure. *Lesson: one measure can't always be formatted to suit every visual, so a dedicated display measure can help.*
 
 - **Building a row-level calculation:** To find suspicious pricing, I needed a price per unit for every individual sale. My first attempt failed because the column was created in the wrong table, so it couldn't reference Sales[Amount]. I recreated it in the Sales table as a calculated column rather than a measure, since the value had to be worked out row by row. *Lesson: use a calculated column when you need a value for each row, and a measure when you need a total across many rows.*
+
+- **Time-Based Analysis** – add transaction dates to unlock monthly trends and seasonality
+
+- **Sales Forecasting** – predict future revenue once time-series data is available
+
+- **Customer Segmentation** – incorporate customer data to identify high-value segments
+
+- **Inventory Analysis** – connect stock data to track supply against demand
+
+- **AI Insights** – use Key Influencers and Q&A visuals for automated analysis
+
+- **Automated Refresh** – schedule refreshes through the Power BI Service
 <br>
 
 ---
 
 ## Skills Demonstrated
 
-<div align="center">
 
 | | | |
-|:--:|:--:|:--:|
+|:--|:--|:--|
 | Data Cleaning | Data Transformation | Data Modeling |
 | DAX | Power BI | Business Intelligence |
 | Dashboard Design | Data Visualization | Analytical Thinking |
@@ -318,23 +312,14 @@ Chocolate-Sales-Analysis/
 <br>
 
 ---
-## Future Improvements
-
-- **Time-Based Analysis** – add transaction dates to unlock monthly trends and seasonality
-- **Sales Forecasting** – predict future revenue once time-series data is available
-- **Customer Segmentation** – incorporate customer data to identify high-value segments
-- **Inventory Analysis** – connect stock data to track supply against demand
-- **AI Insights** – use Key Influencers and Q&A visuals for automated analysis
-- **Automated Refresh** – schedule refreshes through the Power BI Service
-
-<br>
-
----
 
 ## Conclusion
 
-The **Chocolate Factory Sales Analysis** project demonstrates end-to-end business intelligence skills, from preparing and modeling raw data to delivering a polished, interactive report. By transforming 300 raw sales records into clear KPIs, product and market comparisons, and profitability insights, the dashboard gives stakeholders the actionable information they need to make confident, data-driven decisions about products, markets, and sales strategy.
+The **Chocolate Factory Sales Analysis** project demonstrates end-to-end business intelligence skills, from preparing and modelling raw data to delivering a polished, interactive report. By transforming 300 raw sales records into clear KPIs, product and market comparisons, and profitability insights, the dashboard gives stakeholders the actionable information they need to make confident, data-driven decisions about products, markets, and sales strategy.
 
+The analysis shows that strong sales do not always mean strong profits. *Caramel Stuffed Bars* generated the highest revenue (72,373), closely followed by *Choco Coated Almonds* and *Baker's Choco Chips*, while *Baker's Choco Chips* delivered the highest total profit (58,278) and *Eclairs* achieved the strongest margin at 88.6%. In contrast, *Organic Choco Syrup* ranks 4th in revenue but has the lowest margin (28.2%), making it a candidate for pricing or cost review.
+
+The same pattern appears across markets and the sales team. *India* led all countries in revenue (252,469), with *Canada* close behind and achieving the highest margin (71.3%), while the *USA* sold the most units (10,158) but had the lowest margin (43.4%), suggesting a lower-value product mix or pricing pressure. *Gigi Bohling* generated the highest revenue (165,725) and the strongest margin (81.6%) of the sales team. Finally, 63 of 300 transactions (21%) recorded a negative profit, highlighting potential pricing, discounting, or data-entry issues worth investigating.
 <br>
 
 ---
