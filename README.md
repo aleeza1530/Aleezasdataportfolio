@@ -220,7 +220,7 @@ Each dimension has a **one-to-many** relationship with the Sales table. All slic
 
 ---
 
-## Conclusions
+## Total Findings
 
 1. What are the **total sales** for the business?
 2. What is the **total profit** generated?
