@@ -192,12 +192,8 @@ Each dimension has a **one-to-many** relationship with the Sales table. All slic
 |:--|:--|
 | **KPI Cards** | At-a-glance view of revenue, profit, margin, units, and transactions |
 | **Slicers** | Filter the entire report by product, country, and salesperson |
-| **Filters** | Page- and visual-level filters for focused analysis |
 | **Interactive Charts** | Cross-highlighting visuals that respond to user selections |
-| **Drill-through** | Navigate from summary views into detailed product or salesperson pages |
-| **Tooltips** | Custom tooltips revealing extra context on hover |
 | **Dynamic Measures** | KPIs that update instantly based on the selected filter context |
-| **Maps** | Geographic view of sales performance across the six markets |
 | **Loss Analysis** | Identification of transactions where cost exceeded revenue |
 
 <br>
