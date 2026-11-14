@@ -1,4 +1,3 @@
-<img width="403" height="229" alt="Screenshot 2026-11-11 200434" src="https://github.com/user-attachments/assets/14e2940a-1bf4-43f9-92df-0ad70ba5deda" />
 # Terraced Houses in Three Outer Boroughs Outperformed London's 5% Fall as Flats Dropped 9%
 
 Between 2022 and 2026, terraced house prices rose in Waltham Forest (+9%) and Redbridge (+2%) and fell only slightly in Bromley (−1%), all outperforming London's 5% terraced fall.
