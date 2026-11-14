@@ -1,3 +1,4 @@
+<img width="403" height="229" alt="Screenshot 2026-11-11 200434" src="https://github.com/user-attachments/assets/14e2940a-1bf4-43f9-92df-0ad70ba5deda" />
 # Terraced Houses in Three Outer Boroughs Outperformed London's 5% Fall as Flats Dropped 9%
 
 Between 2022 and 2026, terraced house prices rose in Waltham Forest (+9%) and Redbridge (+2%) and fell only slightly in Bromley (−1%), all outperforming London's 5% terraced fall.
@@ -20,7 +21,8 @@ This project analyses London property sales for John, a property investor with a
 
 ## Dashboard Preview
 
-PASTE DASHBOARD SCREENSHOT HERE
+<img width="805" height="457" alt="image" src="https://github.com/user-attachments/assets/53ba252c-79ad-4545-8859-67981f0af0ee" />
+
 
 **Median Price by Year and District:** **Conclusion:** Waltham Forest had the strongest growth of the three boroughs (+7.2%), but its 2026 median of £520k is about £20k above John's £500k budget. Redbridge is the strongest option within budget (+3.4%, with a 2026 median of £450k), although its prices dipped in 2023 and 2024 before recovering. John needs to decide whether Waltham Forest's stronger growth is worth stretching his budget, or whether Redbridge's lower price outweighs its slower, less steady growth.
 
@@ -100,7 +102,8 @@ I started with five yearly CSV files from HM Land Registry, covering every prope
 - **Removed columns:** I removed nine columns: Postcode, PAON, SAON, Street, Locality, Town/City, County, PPD Category and Record Status. None were needed for my questions, and County, PPD Category and Record Status had only one value left after filtering. This left seven columns: Transaction ID, Price, Date of Transfer, Property Type, Old/New, Duration and District.
 - **Validation:** I confirmed the final Sales table held 373,110 sales, and checked that each year from 2022 to 2026 had its own sales count, so the data covered the full period and had loaded correctly.
 
-PASTE POWER QUERY SCREENSHOT HERE
+<img width="1258" height="499" alt="image" src="https://github.com/user-attachments/assets/b6b03e51-6b8e-4b6d-a2a9-db2970e91c63" />
+
 
 *Data cleaning steps applied in Power Query*
 
@@ -116,7 +119,8 @@ The combined Land Registry data was restructured into a star schema:
 
 Each dimension has a **one-to-many** relationship with the Sales table, and the Date table connects to Sales through Date of Transfer. All slicers and chart categories use the dimension tables, so filters flow consistently across the whole report.
 
-PASTE MODEL VIEW SCREENSHOT HERE
+<img width="1069" height="453" alt="image" src="https://github.com/user-attachments/assets/0891ab16-3557-4efb-837c-72b6021453cd" />
+
 
 *Star schema in Power BI Model view*
 
